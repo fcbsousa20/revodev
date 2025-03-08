@@ -1,12 +1,12 @@
 variable "aws_region" {
   description = "Região da AWS onde os recursos serão criados"
-  default     = "us-east-1"
+  default     = "us-east-2"
 }
 
 variable "pipeline_name" {
   description = "Nome do CodePipeline"
   type        = string
-  default     = "devsecops-pipeline-camila"
+  default     = "devsesousa"
 }
 
 variable "ec2_instance_type" {
@@ -21,26 +21,26 @@ variable "ec2_ami" {
 
 variable "key_pair" {
   description = "Nome do par de chaves SSH para a EC2"
-  default     = "terraform-key-pair" //Substitua por sua chave SSH
+  default     = "TERRAFORM" //Substitua por sua chave SSH
 }
 variable "key_pair_ssh" {
   description = "Nome do par de chaves SSH para a EC2"
-  default     = "terraform-key-pair.pem" //Substitua por sua chave SSH
+  default     = "TERRAFORM.pem" //Substitua por sua chave SSH
 }
 
 variable "s3_bucket_name" {
   description = "Nome do bucket S3 para armazenar os artefatos do CodePipeline"
-  default     = "coloque-aqui-o-nome-do-seu-bucket-S3" //Substitua por seu bucket S3
+  default     = "bucketsousa16974" //Substitua por seu bucket S3
 }
 
 variable "github_owner" {
   description = "Dono do repositório GitHub"
-  default     = "coloque-aqui-seu-usuario-github" //Substitua por seu usuario github
+  default     = "fcbsousa20" //Substitua por seu usuario github
 }
 
 variable "github_repo" {
   description = "Nome do repositório no GitHub"
-  default     = "coloque-aqui-o-nome-do-seu-github" //Substitua por seu repositorio no GitHub
+  default     = "revodev" //Substitua por seu repositorio no GitHub
 }
 
 variable "github_branch" {
